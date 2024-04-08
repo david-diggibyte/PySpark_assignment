@@ -6,7 +6,7 @@ class TestPurchaseAnalysis(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.spark = SparkSession.builder.appName("TestPurchaseAnalysis").getOrCreate()
+        cls.spark = SparkSession.builder.appName('Assignment 1 - product and purchase ').getOrCreate()
 
     def test_only_iphone13_customers(self):
         purchase_data_df = create_purchase_data_df(self.spark)
